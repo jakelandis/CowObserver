@@ -18,9 +18,6 @@ repositories {
 
 dependencies {
     compileOnly project(':LogstashAPI')
-    compileOnly(group: 'org.pf4j', name: 'pf4j', version: "2.2.0") {
-        exclude group: "org.slf4j"
-    }
 
     // This dependency is used internally, and not exposed to consumers on their own compile classpath.
     compile 'com.google.guava:guava:21.0'
